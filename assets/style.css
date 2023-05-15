@@ -4,6 +4,8 @@
 
     --color-primary: black;
     --color-selected: gainsboro;
+
+    --transition-05: all 0.5s ease-in-out;
 }
 
 body {
@@ -26,11 +28,9 @@ a:hover{
 }
 
 header {
-    display: flex;
-    column-gap: var(--spacing-s);
     padding: var(--spacing-m);
     border-bottom: 1px solid black;
-    justify-content: center;
+    text-align: center;
 }
 
 p {
@@ -38,6 +38,21 @@ p {
     width: 100%;
     box-sizing: border-box;
     margin: var(--spacing-s) 0;
+}
+
+/*///////////// MESSAGES /////////////*/
+
+.alert {
+    background-color: rebeccapurple;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: fit-content;
+    width: 350px;
+    font-size: 80%;
+    padding: 5px;
+    max-width: 100%;
 }
 
 
@@ -62,6 +77,14 @@ p {
     display: grid;
 }
 
+.col1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.col2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .col3 {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -78,6 +101,11 @@ p {
     height: 100%;
 }
 
+.column > div:nth-last-child(1) {
+    border-right: none;
+    height: 100%;
+}
+
 .col-head {
     padding: var(--spacing-s);
     border-bottom: 1px solid black;
@@ -86,7 +114,23 @@ p {
 }
 
 .expand {
-    grid-template-columns: 70% auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: var(--transition-05);
+}
+
+.expand1 {
+    grid-template-columns: 3fr 1fr 1fr;
+    transition: var(--transition-05);
+}
+
+.expand2 {
+    grid-template-columns: 1fr 3fr 1fr;
+    transition: var(--transition-05);
+}
+
+.expand3 {
+    grid-template-columns: 1fr 1fr 3fr;
+    transition: var(--transition-05);
 }
 
 /*///////////// IFRAMES /////////////*/
