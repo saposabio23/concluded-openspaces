@@ -1,0 +1,102 @@
+:root {
+    --spacing-m: 15px;
+    --spacing-s: 5px;
+
+    --color-primary: black;
+    --color-selected: gainsboro;
+}
+
+body {
+    font-family: "Inter";
+    font-weight: 400;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--color-dim);
+    background-color: var(--color-selected);
+}
+
+header {
+    display: flex;
+    column-gap: var(--spacing-s);
+    padding: var(--spacing-m);
+    border-bottom: 1px solid black;
+    justify-content: center;
+}
+
+p {
+    padding: 0 var(--spacing-s);
+    width: 100%;
+    box-sizing: border-box;
+    margin: var(--spacing-s) 0;
+}
+
+
+/*///////////// ASSETS /////////////*/
+
+#follow {
+    color: var(--color-selected);
+}
+
+.selected {
+    color: var(--color-selected);
+}
+
+.selected:hover {
+    color: var(--color-dim);
+    background-color: var(--color-selected);
+}
+
+/*///////////// COLUMNS /////////////*/
+
+.column {
+    display: grid;
+}
+
+.col3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.full-h{
+    height: 100%;
+}
+
+
+/*///////////// COLUMNS content /////////////*/
+
+.column > div {
+    border-right: 1px solid black;
+    height: 100%;
+}
+
+.col-head {
+    padding: var(--spacing-s);
+    border-bottom: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.expand {
+    grid-template-columns: 70% auto auto;
+}
+
+/*///////////// IFRAMES /////////////*/
+
+iframe {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+  }
+
