@@ -5,7 +5,7 @@
     --color-primary: black;
     --color-selected: gainsboro;
 
-    --transition-05: all 0.5s ease-in-out;
+    --transition-05: all 0.3s ease-in-out;
 }
 
 body {
@@ -114,22 +114,32 @@ p {
 }
 
 .expand {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     transition: var(--transition-05);
 }
 
 .expand1 {
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
     transition: var(--transition-05);
 }
 
 .expand2 {
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
     transition: var(--transition-05);
 }
 
 .expand3 {
-    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    transition: var(--transition-05);
+}
+
+.expand4 {
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+    transition: var(--transition-05);
+}
+
+.expand5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
     transition: var(--transition-05);
 }
 
