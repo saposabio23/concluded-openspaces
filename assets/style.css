@@ -20,7 +20,7 @@ body {
 
 a {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
     background-color: transparent;
     padding: 4px 4px 2px 4px;
     border-radius: 5px;
@@ -30,6 +30,8 @@ a {
 a:hover{
     color: var(--color-dim);
     background-color: var(--color-selected);
+    text-decoration: none;
+
 }
 
 header {
@@ -159,11 +161,3 @@ iframe {
     border: none;
   }
 
-
-
-
-
-
-  #blocks {
-    grid-template-columns: 1fr 1fr 1fr 1fr !important;
-  }
