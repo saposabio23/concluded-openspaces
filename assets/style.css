@@ -1,5 +1,6 @@
 :root {
     --spacing-m: 15px;
+    --spacing-sm: 8px;
     --spacing-s: 5px;
 
     --color-primary: black;
@@ -9,7 +10,7 @@
 }
 
 body {
-  font-family: sans-serif;
+    font-family: sans-serif;
 
     font-weight: 400;
     height: 100vh;
@@ -24,10 +25,9 @@ a {
     background-color: transparent;
     padding: 4px 4px 2px 4px;
     border-radius: 5px;
-
 }
 
-a:hover{
+a:hover {
     color: var(--color-dim);
     background-color: var(--color-selected);
     text-decoration: none;
@@ -45,6 +45,15 @@ p {
     width: 100%;
     box-sizing: border-box;
     margin: var(--spacing-s) 0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.no-line {
+    text-decoration: none !important;
 }
 
 /*///////////// MESSAGES /////////////*/
@@ -78,6 +87,72 @@ p {
     background-color: var(--color-selected);
 }
 
+/*///////////// INFOS content /////////////*/
+
+.line-block {
+    padding: var(--spacing-sm);
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.line-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section-title {
+    color: black;
+    border-radius: 5px;
+}
+
+#info-help{
+    background-color: gainsboro;
+}
+
+#info-help:hover{
+    cursor: pointer;
+}
+
+#close {
+    transform: rotate(90deg);
+    text-decoration: none;
+}
+
+.info-arrow {
+    transform: rotate(180deg) !important;
+}
+
+.info-text {
+    padding: var(--spacing-s) 4px 2px 4px;
+}
+
+.info-hide {
+    display: none !important;
+}
+
+
+/*///////////// A /////////////*/
+
+.a-line-block {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.a-full-header {
+color: black;
+text-decoration: underline;
+background-color: transparent;
+padding: var(--spacing-sm);
+width: 100%;
+box-sizing: border-box;
+display: block;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+}
+
 /*///////////// COLUMNS /////////////*/
 
 .column {
@@ -96,29 +171,22 @@ p {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.full-h{
+.full-h {
     height: 100%;
 }
 
-
 /*///////////// COLUMNS content /////////////*/
 
-.column > div {
+.column>div {
     border-right: 1px solid black;
     height: 100%;
 }
 
-.column > div:nth-last-child(1) {
+.column>div:nth-last-child(1) {
     border-right: none;
     height: 100%;
 }
 
-.col-head {
-    padding: var(--spacing-s);
-    border-bottom: 1px solid black;
-    width: 100%;
-    box-sizing: border-box;
-}
 
 .expand {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -159,5 +227,4 @@ iframe {
     box-sizing: border-box;
     outline: none;
     border: none;
-  }
-
+}
