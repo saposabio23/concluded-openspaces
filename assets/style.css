@@ -125,15 +125,16 @@ bottom: 0;
 }
 
 .info-arrow {
-    transform: rotate(180deg) !important;
+    transform: rotate(90deg) !important;
 }
 
 .info-text {
     padding: var(--spacing-s) 4px 2px 4px;
+    display: none !important;
 }
 
 .info-hide {
-    display: none !important;
+display: block !important;
 }
 
 
