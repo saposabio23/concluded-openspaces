@@ -96,6 +96,8 @@ button {
     border-bottom: 1px solid black;
 }
 
+
+
 .line-header {
     display: flex;
     justify-content: space-between;
@@ -109,14 +111,16 @@ button {
 
 #info-help{
     background-color: gainsboro;
+    position: absolute;
+bottom: 0;
 }
 
-#info-help:hover{
+#info-help:hover, #close:hover{
     cursor: pointer;
 }
 
 #close {
-    transform: rotate(90deg);
+    transform: rotate(270deg);
     text-decoration: none;
 }
 

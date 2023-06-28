@@ -6,5 +6,4 @@ function hideInfo() {
     infoText.classList.toggle ('info-hide')
     close.classList.toggle ('info-arrow')
   }
-close.addEventListener('click', hideInfo);
 infoHelp.addEventListener('click', hideInfo);
